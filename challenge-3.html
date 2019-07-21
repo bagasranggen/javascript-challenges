@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Challenge 1</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container-fluid py-3 bg-primary">
+    <div class="container text-center">
+      <h3 class="text-center font-weigt-bold">Welcome!</h3>
+      <form>
+
+        <div class="form-row">
+          <div class="col-3">
+            <select class="custom-select my-1 mr-sm-2" id="gender">
+              <option selected>Choose...</option>
+              <option value="Mr.">Mr.</option>
+              <option value="Mrs.">Mrs.</option>
+              <option value="Ms.">Ms.</option>
+            </select>
+          </div>
+
+          <div class="col-7">
+            <input type="text" class="form-control" id="name" placeholder="Please inser your name">
+          </div>
+
+          <div class="col-2">
+            <button type="button" class="btn btn-light" onclick="greeting()">Submit</button>
+          </div>
+
+        </div>
+
+
+      </form>
+    </div>
+  </div>
+
+  <script src="js/challenge-3.js"></script>
+</body>
+
+</html>

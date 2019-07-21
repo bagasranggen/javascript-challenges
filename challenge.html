@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Challenge</title>
+</head>
+
+<body>
+  <h1>JavaScript Challenge</h1>
+  <form>
+    <input type="text" placeholder="name" id="name">
+    <input type="text" placeholder="hometown" id="town">
+    <button type="button" onclick="testGreeting()">Test</button>
+    <button type="reset" onclick="eraseGreeting()">Reset</button>
+  </form>
+  <div id="greeting">
+
+  </div>
+
+  <script>
+    function testGreeting() {
+      //  var visitor_name = prompt("Please enter your name");
+      //  var town = prompt("Please enter your hometown");
+      var visitor_name = document.getElementById("name").value;
+      var town = document.getElementById("town").value;
+      var welcome_message = "Welcome " + visitor_name + "!" + "<br>" + " We are happy to have a visitor from " + "<span id='hometown'></span>" + ".";
+
+      if (visitor_name !== "" && town !== "") {
+        document.querySelector("#greeting").innerHTML = welcome_message;
+        document.querySelector("#hometown").innerHTML = town;
+      } else {
+        alert("Please fill the form!");
+      }
+
+    }
+
+    function eraseGreeting() {
+      document.querySelector("#greeting").innerHTML = "";
+    }
+
+
+
+    var punyaKtp = false;
+    var punyaSim = true;
+
+    if (punyaKtp === true) {
+      console.log("Anda bisa beli tiket");
+    } else {
+      if (punyaSim === true) {
+        console.log("Anda bisa beli tiket");
+      } else {
+        console.log("Anda tidak bisa beli tiket");
+      }
+    }
+
+    if (punyaKtp === true || punyaSim === true) {
+      console.log("Anda bisa beli tiket");
+    } else {
+      console.log("Anda tidak bisa beli tiket");
+    }
+
+    if (punyaKtp === true && punyaSim === true) {
+      console.log("Anda bisa beli tiket");
+    } else {
+      console.log("Anda tidak bisa beli tiket");
+    }
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>TEST DOM</title>
+</head>
+
+<body>
+  <div>
+    <h1>Hello World</h1>
+    <h1 class="test">Hello World!</h1>
+    <button onclick="document.querySelector('h1').textContent='JavaScript';" id="btnTop">Uhuy</button>
+    <button onmouseover="document.querySelector('h1.test').textContent='JavaScript';" id="btn">Uhuy!</button>
+    <button onclick="coba()">Test</button>
+  </div>
+
+  <script>
+    //    alert("Hello!");
+
+    //    document.querySelector("body").innerHTML = 'style="background-color: red;"';
+
+    //    document.querySelector("h1.test").textContent = "JavaScript";
+
+    document.querySelector("#btn").addEventListener("mouseout", function() {
+      var coba = document.querySelector(".test");
+
+      coba.textContent = "Hello World!";
+      coba.style.backgroundColor = "blue";
+
+    });
+
+    document.querySelector("#btnTop").addEventListener("click", function() {
+      var coba = document.querySelector(".test");
+
+      coba.style.backgroundColor = "white";
+    });
+
+    function coba() {
+      var coba = document.querySelector(".test");
+
+    }
+
+  </script>
+</body>
+
+</html>
