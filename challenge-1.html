@@ -2,26 +2,35 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Challenge 1</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<meta charset="UTF-8">
+	<title>Challenge 1</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
-  <h2 class="text-center bg-dark text-white py-3">Challenge - 1</h2>
-  <div class="container-fluid py-3 bg-primary">
-    <div class="container text-center">
-      <form action="">
-        <label for="password" class="btn">Please type your password</label><br>
-        <input type="password" name="password" id="password" class="btn btn-light">
-        <button type="button" onclick="verifyPassword()" class="btn btn-light">Submit</button>
-      </form>
-    </div>
-  </div>
+	<h2 class="text-center bg-dark text-white py-4 m-0">Challenge - 1</h2>
+	<div class="container-fluid py-5 bg-primary">
+		<div class="container text-center">
+			<form onSubmit="return false;">
+				<label for="password" class="btn font-weight-bold text-light">Please type your password</label><br>
+				<input type="password" name="password" id="password" class="btn btn-light">
+				<button type="button" onclick="verifyPassword()" class="btn btn-light">Submit</button>
+			</form>
+		</div>
+	</div>
+
+	<div class="container-fluid py-4 bg-dark nav-dark">
+		<div class="mx-auto">
+			<ul class="nav justify-content-center">
+				<li class="nav-item"><a class="nav-link" href="challenge-1.html">Challenge 1</a></li>
+				<li class="nav-item"><a class="nav-link" href="challenge-2.html">Challenge 2</a></li>
+				<li class="nav-item"><a class="nav-link" href="challenge-3.html">Challenge 3</a></li>
+			</ul>
+		</div>
+	</div>
 
 
-
-  <script src="js/challenge-1.js"></script>
+	<script src="js/challenge-1.js"></script>
 </body>
 
 </html>
